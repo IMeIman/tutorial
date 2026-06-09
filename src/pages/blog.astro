@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css"
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
+import MyHeader from "../components/myHeader.astro";
+import Footer from "../components/Footer.astro"
 import Social from "../components/Social.astro";
 
 const title = "Blog";
@@ -13,7 +13,7 @@ const title = "Blog";
     <title>{title}</title>
   </head>
   <body>
-    <Navigation/>
+    <MyHeader/>
 
     <h1>Mi blog de aprendizaje sobre Astro</h1>
     <p>Aquí es donde publicaré acerca de mi viaje aprendiendo Astro.</p>
@@ -22,6 +22,7 @@ const title = "Blog";
       <li><a href="/posts/post-2/">Publicación 2</a></li>
       <li><a href="/posts/post-3/">Publicación 3</a></li>
     </ul>
+
     <Footer/>
     <Social platform="twitter" username="Fernando"/>
 	  <Social platform="instagram" username="Fernando"/>
